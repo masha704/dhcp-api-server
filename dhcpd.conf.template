@@ -1,0 +1,9 @@
+default-lease-time {{.DefaultLeaseTime}};
+max-lease-time {{.MaxLeaseTime}};
+
+subnet {{.Subnet}} netmask {{.Netmask}} {
+	range {{.RangeStart}} {{.RangeEnd}};
+	option routers {{.Gateway}};
+	option domain-name-servers {{.DNSservers}};
+	option domain-name "example.org";
+}
